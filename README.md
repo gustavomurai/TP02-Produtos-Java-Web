@@ -3,7 +3,7 @@
 Projeto desenvolvido para a disciplina de **Sistemas Web 1 (CBTSWE1)** do curso de Análise e Desenvolvimento de Sistemas no **IFSP - Campus Cubatão**. O objetivo é gerir uma entidade de produtos utilizando tecnologias Java Servlets e armazenamento em memória.
 
 ## 👨‍💻 Integrantes
-* **Gustavo Cerqueira Murai** - [Seu Link do GitHub]
+* **Gustavo Cerqueira Murai** 
 * **Igor Murai**
 
 ## 🎯 Objetivo do Projeto

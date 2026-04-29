@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos - TP02</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        /* Consistência absoluta com o Design System */
+        :root {
+            --bg-base: #0F0F11;
+            --bg-surface: #18181B;
+            --bg-surface-hover: #27272A;
+            --border-color: #3F3F46;
+            --brand-primary: #6366F1;
+            --text-primary: #F4F4F5;
+            --text-secondary: #A1A1AA;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+            --transition-fast: 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .surface-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        .title-h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .dev-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--brand-primary);
+            margin: 8px 0;
+            letter-spacing: 0.5px;
+        }
+
+        .dev-amp {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .info-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+            font-weight: 400;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 32px 0;
+            border: none;
+        }
+
+        /* Botão UI Consistente */
+        .btn-ui {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            height: 48px; /* Touch target otimizado */
+            border-radius: var(--radius-sm);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: var(--transition-fast);
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .btn-ghost-ui {
+            background-color: transparent;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-ghost-ui:hover {
+            color: var(--text-primary);
+            background-color: var(--bg-surface-hover);
+            border-color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="surface-card">
+        <h2 class="title-h2">
+            <i class="bi bi-people" style="color: var(--brand-primary);"></i>
+            Desenvolvedores do Projeto
+        </h2>
+        
+        <div class="mb-4 pt-2">
+            <div class="dev-name">Gustavo Murai</div>
+            <div class="dev-amp">&</div>
+            <div class="dev-name">Igor Murai</div>
+        </div>
+
+        <div class="mb-2">
+            <p class="info-text">Instituto Federal de São Paulo (IFSP) – Campus Cubatão</p>
+            <p class="info-text">Disciplina: CBTSWE1 - Sistemas Web 1</p>
+            <p class="info-text">Professor: Wellington Tuler Moraes</p>
+        </div>
+        
+        <hr class="divider">
+
+        <a href="index.html" class="btn-ui btn-ghost-ui">
+            <i class="bi bi-arrow-left"></i> Voltar ao Menu Principal
+        </a>
+    </div>
+
+</body>
+</html>

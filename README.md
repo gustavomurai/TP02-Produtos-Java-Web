@@ -37,7 +37,4 @@ A aplicação foi desenvolvida com um **Design System Premium**, focado em:
 * **Responsividade:** Compatível com diferentes tamanhos de ecrã.
 * **Feedback Visual:** Telas de sucesso e erro personalizadas para melhor experiência do utilizador.
 
-## 🚀 Como Executar
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
+

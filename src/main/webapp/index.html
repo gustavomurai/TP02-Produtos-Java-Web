@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Produtos - TP02</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        /* Design System - Variáveis Globais */
+        :root {
+            --bg-base: #0F0F11;        /* Fundo principal mais profundo */
+            --bg-surface: #18181B;     /* Fundo dos cards (elevação 1) */
+            --bg-surface-hover: #27272A; /* Hover em elementos da superfície */
+            --border-color: #3F3F46;   /* Bordas sutis */
+            --brand-primary: #6366F1;  /* Roxo/Índigo principal (WCAG AA) */
+            --brand-hover: #4F46E5;
+            --text-primary: #F4F4F5;
+            --text-secondary: #A1A1AA;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+            --transition-fast: 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .surface-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 40px;
+            width: 100%;
+            max-width: 440px; /* Grid mais contido para menus */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        /* Tipografia */
+        .title-h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+
+        /* Botões UI */
+        .btn-ui {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            height: 48px; /* Touch target padrão UX */
+            border-radius: var(--radius-sm);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: var(--transition-fast);
+            width: 100%;
+            margin-bottom: 16px;
+            text-decoration: none;
+        }
+
+        .btn-primary-ui {
+            background-color: var(--brand-primary);
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-primary-ui:hover {
+            background-color: var(--brand-hover);
+            color: #ffffff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-outline-ui {
+            background-color: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-outline-ui:hover {
+            background-color: var(--bg-surface-hover);
+            color: var(--text-primary);
+            border-color: var(--text-secondary);
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 24px 0;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="surface-card">
+        <h2 class="title-h2">Painel de Controle</h2>
+        <p class="subtitle">IFSP Cubatão • CBTSWE1</p>
+
+        <a href="ViewServlet" class="btn-ui btn-primary-ui">
+            <i class="bi bi-card-list fs-5"></i> Listar Produtos
+        </a>
+        
+        <a href="cadastrar.html" class="btn-ui btn-primary-ui">
+            <i class="bi bi-plus-lg fs-5"></i> Cadastrar Novo Produto
+        </a>
+        
+        <hr class="divider">
+
+        <a href="creditos.html" class="btn-ui btn-outline-ui">
+            <i class="bi bi-people fs-5"></i> Créditos da Dupla
+        </a>
+    </div>
+
+</body>
+</html>
